@@ -29,16 +29,30 @@ dd {
 }
 .realisations li {
 	display: inline-block;
+	vertical-align: top;
+}
+.competences {
+	margin-top: 0.5em;
 }
 figure {
 	border: 1px solid gray;
 	margin: 0 1em 1em 1em;
-	height: 130px;
+	position: relative;
+	height: 120px;
 }
 figure img {
 	height: auto;
 	width: 140px;
 }
 figcaption {
+	background-color: #373737;
+	background-color: rgba(0, 0, 0, 0.75);
+	color: white;
+	line-height: normal;
 	text-align: center;
+	padding: 0.5em 0;
+
+	position: absolute;
+	bottom: 10%;
+	width: 100%;
 }
