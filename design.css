@@ -2,12 +2,41 @@ html {
 	font-family: Arial;
 	font-size: 12pt;
 }
+body {
+	background: white url("images/background.png") repeat;
+	margin: 0;
+}
 #main {
+	border: 3px double white;
+	border-width: 0 3px;
+	background-color: #2e2e2e;
+	color: white;
 	margin: auto;
 	max-width: 980px;
+	padding: 1em 0;
+	overflow: hidden;
 	width: 80%;
 }
 
+header {
+	padding: 1em 0;
+}
+#profil {
+	margin: 0 3em;;
+}
+#profil img {
+	float: left;
+	margin-right: 1em;
+}
+#profil:after {
+	clear: both;
+	content: '';
+	display: block;
+}
+
+#timeline {
+	margin: 0 3em;
+}
 #timeline p {
 	margin-top: 0;
 }
@@ -31,20 +60,19 @@ dd {
 	display: inline-block;
 	vertical-align: top;
 }
-.competences {
-	margin-top: 0.5em;
-}
-figure {
+
+.realisations figure {
+	background-color: white;
 	border: 1px solid gray;
 	margin: 0 1em 1em 1em;
 	position: relative;
 	height: 120px;
 }
-figure img {
+.realisations figure img {
 	height: auto;
 	width: 140px;
 }
-figcaption {
+.realisations figcaption {
 	background-color: #373737;
 	background-color: rgba(0, 0, 0, 0.70);
 	color: white;
@@ -55,4 +83,18 @@ figcaption {
 	position: absolute;
 	bottom: 10%;
 	width: 100%;
+}
+.competences {
+	margin-top: 0.5em;
+}
+.fullWidth {
+	margin: 0 -2em;
+}
+
+header {
+	background-color: #373737;
+	margin: 0;
+}
+header h1 {
+	margin: 0;
 }

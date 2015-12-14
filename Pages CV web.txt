@@ -1,0 +1,11 @@
+Toutes les pages
+	Présentation (photo, coordonnées)
+
+Page d'accueil
+	Slider derniers projets
+
+Projets
+	Liste projets (1-2 colonnes)
+
+A propos
+	Timeline (diplômes, expériences pro)
