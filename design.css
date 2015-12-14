@@ -18,6 +18,22 @@ body {
 	width: 80%;
 }
 
+header {
+	padding: 1em 0;
+}
+#profil {
+	margin: 0 3em;;
+}
+#profil img {
+	float: left;
+	margin-right: 1em;
+}
+#profil:after {
+	clear: both;
+	content: '';
+	display: block;
+}
+
 #timeline {
 	margin: 0 3em;
 }
@@ -44,6 +60,30 @@ dd {
 	display: inline-block;
 	vertical-align: top;
 }
+
+.realisations figure {
+	background-color: white;
+	border: 1px solid gray;
+	margin: 0 1em 1em 1em;
+	position: relative;
+	height: 120px;
+}
+.realisations figure img {
+	height: auto;
+	width: 140px;
+}
+.realisations figcaption {
+	background-color: #373737;
+	background-color: rgba(0, 0, 0, 0.75);
+	color: white;
+	line-height: normal;
+	text-align: center;
+	padding: 0.5em 0;
+
+	position: absolute;
+	bottom: 10%;
+	width: 100%;
+}
 .competences {
 	margin-top: 0.5em;
 }
@@ -57,27 +97,4 @@ header {
 }
 header h1 {
 	margin: 0;
-}
-
-figure {
-	border: 1px solid gray;
-	margin: 0 1em 1em 1em;
-	position: relative;
-	height: 120px;
-}
-figure img {
-	height: auto;
-	width: 140px;
-}
-figcaption {
-	background-color: #373737;
-	background-color: rgba(0, 0, 0, 0.75);
-	color: white;
-	line-height: normal;
-	text-align: center;
-	padding: 0.5em 0;
-
-	position: absolute;
-	bottom: 10%;
-	width: 100%;
 }
