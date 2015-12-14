@@ -52,6 +52,10 @@ dd {
 	padding: 0.15em;
 }
 
+#realisations {
+	margin: 0 3em;
+}
+
 .realisations {
 	margin: 0 0 0 -1em;
 	padding: 0;
@@ -64,7 +68,7 @@ dd {
 .realisations figure {
 	background-color: white;
 	border: 1px solid gray;
-	margin: 0 1em 1em 1em;
+	margin: 0 0.5em 1em 0.5em;
 	position: relative;
 	height: 120px;
 }
