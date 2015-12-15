@@ -21,8 +21,17 @@ body {
 header {
 	padding: 1em 0;
 }
+
+header {
+	background-color: #373737;
+	margin: 0;
+}
+header h1 {
+	margin: 0;
+}
+
 #profil {
-	margin: 0 3em;;
+	margin: 0 2em;;
 }
 #profil img {
 	float: left;
@@ -35,7 +44,7 @@ header {
 }
 
 #timeline {
-	margin: 0 3em;
+	margin: 0 2em;
 }
 #timeline p {
 	margin-top: 0;
@@ -53,30 +62,40 @@ dd {
 }
 
 #realisations {
-	margin: 0 3em;
+	margin: 0 2em;
 }
-
-.realisations {
-	margin: 0 0 0 -1em;
+#realisations ul {
+	list-style: none;
 	padding: 0;
 }
-.realisations li {
+#realisations > ul > li {
+	background-color: #373737;
+	margin: 1em 0;
+	overflow: hidden;
+	padding: 0 1em;
+}
+
+.gallery {
+	margin: 0.5em 0 0 -0.5em;
+	padding: 0;
+}
+.gallery li {
 	display: inline-block;
 	vertical-align: top;
 }
 
-.realisations figure {
+.gallery figure {
 	background-color: white;
 	border: 1px solid gray;
 	margin: 0 0.5em 1em 0.5em;
 	position: relative;
 	height: 120px;
 }
-.realisations figure img {
+.gallery figure img {
 	height: auto;
 	width: 140px;
 }
-.realisations figcaption {
+.gallery figcaption {
 	background-color: #373737;
 	background-color: rgba(0, 0, 0, 0.70);
 	color: white;
@@ -93,12 +112,4 @@ dd {
 }
 .fullWidth {
 	margin: 0 -2em;
-}
-
-header {
-	background-color: #373737;
-	margin: 0;
-}
-header h1 {
-	margin: 0;
 }
