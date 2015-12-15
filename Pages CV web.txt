@@ -9,3 +9,4 @@ Projets
 
 A propos
 	Timeline (diplômes, expériences pro)
+	Centres intérêt (électronique)
