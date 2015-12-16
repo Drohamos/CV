@@ -43,7 +43,16 @@ header h1 {
 	display: block;
 }
 
+#slider {
+	margin: 2em;
+}
+#slider img {
+	width: 100%;
+	height: auto;
+}
+
 #timeline {
+	line-height: 1.25;
 	margin: 0 2em;
 }
 #timeline p {
@@ -64,7 +73,7 @@ dd {
 #realisations {
 	margin: 0 2em;
 }
-#realisations ul {
+#realisations > ul {
 	list-style: none;
 	padding: 0;
 }
