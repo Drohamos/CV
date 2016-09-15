@@ -90,6 +90,10 @@ dd {
 	background-color: #555555;
 	color: lightgray;
 }
+#realisations .button:focus {
+	background-color: #4d4d4d;
+	color: lightgray;
+}
 
 .gallery {
 	margin: 0.5em 0 0 -0.5em;
