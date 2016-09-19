@@ -1,55 +1,32 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width">
-	<title>Réalisations</title>
-	<link rel="stylesheet" href="design.css">
-	<link rel="stylesheet" href="magnific-popup.css">
-</head>
-<body>
-<div id="main">
-	<header>
-		<div id="profil">
-			<!--<img src="images/profil.jpg" />!-->
-			<h1>Robin BARKAS</h1>
-			<h2>Développeur Web</h2>
-			<p>
-				Strasbourg
-			</p>
-		</div>
-	</header>
+<div id="realisations">
+	<ul>
+		{% for projet in realisations %}
+			<li id="a_{{ projet.nom_court }}">
+				<h3>{{ projet.nom }}</h3>
+				<p class="tags">
+					{%  for tag in projet.tags %}
+						<span class="{{ tag }}">{{ tags[tag] }}</span>
+					{% endfor %}
+				</p>
+				{% if projet.url %}<a href="{{ projet.url }}" class="button">Visiter le site</a>{% endif %}
 
-	<div id="realisations">
-		<ul>
-			{% for projet in realisations %}
-				<li>
-					<h3>{{ projet.nom }}</h3>
-					<p class="tags">
-						{%  for tag in projet.tags %}
-							<span class="{{ tag }}">{{ tags[tag] }}</span>
-						{% endfor %}
-					</p>
-					{% if projet.url %}<a href="{{ projet.url }}" class="button">Visiter le site</a>{% endif %}
-
-					{{ projet.desc|raw }}
-					{% if projet.images %}
-					<ul class="gallery">
-						{%  for i in 1..projet.images %}
-							<li>
-								<figure>
-									<a href="images/realisations_{{ projet.nom_court }}_{{ loop.index }}.jpg">
-										<img src="images/realisations_{{ projet.nom_court }}_{{ loop.index }}_thumb.jpg" />
-									</a>
-								</figure>
-							</li>
-						{% endfor %}
-					</ul>
-				{% endif %}
-				</li>
-			{% endfor %}
-		</ul>
-	</div>
+				{{ projet.desc|raw }}
+				{% if projet.images %}
+				<ul class="gallery">
+					{%  for i in 1..projet.images %}
+						<li>
+							<figure>
+								<a href="images/realisations_{{ projet.nom_court }}_{{ loop.index }}.jpg">
+									<img src="images/realisations_{{ projet.nom_court }}_{{ loop.index }}_thumb.jpg" />
+								</a>
+							</figure>
+						</li>
+					{% endfor %}
+				</ul>
+			{% endif %}
+			</li>
+		{% endfor %}
+	</ul>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="magnific-popup.js"></script>
@@ -62,5 +39,3 @@
 		// other options
 	});
 </script>
-</body>
-</html>

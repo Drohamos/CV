@@ -171,7 +171,9 @@ dd {
 	color: #343434;
 }
 .tags .js {
-
+	background-color: #77cef2;
+	border-color: #77d8fc;
+	color: #343434;
 }
 .tags .ps {
 	background-color: #08003c;

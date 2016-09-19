@@ -9,6 +9,8 @@ $twig = new Twig_Environment($loader, array(
 	'cache' => 'cache/Twig',
 ));
 
+$data['toInclude'] = 'realisations.twig';
+
 $data['tags'] = array(
 		'uha' => 'Projet UHA 4.0',
 		'php' => 'PHP',
@@ -77,6 +79,6 @@ $data['realisations'] = array(
 	),
 );
 
-echo $twig->render('realisations.twig', $data);
+echo $twig->render('layout.twig', $data);
 
 ?>
