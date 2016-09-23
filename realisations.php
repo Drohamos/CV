@@ -27,7 +27,9 @@ $data['realisations'] = array(
 		'nom' => 'Vitrines de Mulhouse',
 		'nom_court' => 'vitrines',
 		'tags' => array('uha', 'php', 'sql', 'html', 'css'),
-		'desc' => '<p>Graphique interactif à partir d\'une base de données.</p>'
+		'url' => 'http://demo.vitrines.robinb.fr/?commercant=*&datePicker=2015-12-07&timeSpan=month',
+		'desc' => '<p>Graphique interactif à partir d\'une base de données.</p>',
+        'images' => 1
 	),
 	array(
 		'nom' => 'From-US',
@@ -41,7 +43,7 @@ $data['realisations'] = array(
 		'nom' => 'Slider',
 		'nom_court' => 'slider',
 		'tags' => array('uha', 'html', 'css', 'js', 'ps'),
-		'url' => 'http://slider.demo.robinb.fr',
+		'url' => 'http://demo.slider.robinb.fr',
 		'desc' => '<p>Création d\'un slider en Javascript.</p>',
 		'images' => 1
 	),
@@ -49,15 +51,15 @@ $data['realisations'] = array(
 		'nom' => 'Pointage',
 		'nom_court' => 'pointage',
 		'tags' => array('uha', 'php', 'sql', 'html', 'css', 'jq'),
-		'url' => 'http://pointage.demo.robinb.fr',
-		'desc' => '<p>Application Web permettant aux élèves d\'enregistrer leurs heures de départ et d\'arrivée en cours</p>',
+		'url' => 'http://demo.pointage.robinb.fr',
+		'desc' => '<p>Application Web permettant aux élèves d\'enregistrer leurs heures de départ et d\'arrivée en cours.</p>',
 		'images' => 2
 	),
 	array(
 		'nom' => 'Électricité',
 		'nom_court' => 'elec',
 		'tags' => array('php', 'sql', 'html', 'css', 'jq', 'ps'),
-		'url' => 'http://www.elec.demo.robinb.fr',
+		'url' => 'http://demo.elec.robinb.fr',
 		'desc' => '<p>Site web créé pour un artisan électricien.</p>
 			<ul class="competences">
 				<li>Galerie photo avec gestion complète dans le backend (upload, tagging, description, ordre d\'affichage)</li>
@@ -73,7 +75,7 @@ $data['realisations'] = array(
 		'nom' => 'Algorithme réservation chambres',
 		'nom_court' => 'hotel',
 		'tags' => array('uha', 'php', 'sql', 'html', 'css', 'jq'),
-		'url' => 'http://hotel.demo.robinb.fr/reserver.php',
+		'url' => 'http://demo.hotel.robinb.fr/reserver.php',
 		'desc' => '<p>Algorithme et interface d\'attribution de chambres dans un hôtel.</p>',
 		'images' => 1
 	),
