@@ -27,7 +27,7 @@ $data['realisations'] = array(
 		'nom' => 'Vitrines de Mulhouse',
 		'nom_court' => 'vitrines',
 		'tags' => array('uha', 'php', 'sql', 'html', 'css'),
-		'url' => 'http://demo.vitrines.robinb.fr/?commercant=*&datePicker=2015-12-07&timeSpan=month',
+		'url' => 'http://demo.vitrines.robinb.fr',
 		'desc' => '<p>Graphique interactif à partir d\'une base de données.</p>',
         'images' => 1
 	),
