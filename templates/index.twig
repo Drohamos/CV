@@ -1,155 +1,159 @@
-<div id="slider">
-	<a href="#">
-		<img src="images/slider.jpg" />
-	</a>
-</div>
+{% extends "layout.twig" %}
 
-<div id="timeline">
-	<dl>
-		<dt>2016</dt>
-		<dd>
-			<p>
-				<strong>Deuxième année de License professionnelle Développeur Informatique</strong><br />
-				À l'Université de Haute-Alsace, Mulhouse (68)
-			</p>
+{% block mainContent %}
+	<div id="slider">
+		<a href="#">
+			<img src="images/slider.jpg" />
+		</a>
+	</div>
 
-			<ul class="gallery">
-				<li>
-					<a href="realisations.php#a_vitrines">
-						<figure>
-							<img src="images/realisation_fromus.jpg" />
-							<figcaption>Vitrines Mulhouse</figcaption>
-						</figure>
-					</a>
-				</li>
-			</ul>
-		</dd>
+	<div id="timeline">
+		<dl>
+			<dt>2016</dt>
+			<dd>
+				<p>
+					<strong>Deuxième année de License professionnelle Développeur Informatique</strong><br />
+					À l'Université de Haute-Alsace, Mulhouse (68)
+				</p>
 
-		<dt>2015</dt>
-		<dd>
-			<p>
-				<strong>Première année de License professionnelle Développeur Informatique</strong><br />
-				À l'Université de Haute-Alsace, Mulhouse (68)
-			</p>
+				<ul class="gallery">
+					<li>
+						<a href="realisations.php#a_vitrines">
+							<figure>
+								<img src="images/realisation_fromus.jpg" />
+								<figcaption>Vitrines Mulhouse</figcaption>
+							</figure>
+						</a>
+					</li>
+				</ul>
+			</dd>
 
-			<ul class="gallery">
-				<li>
-					<a href="realisations.php#a_fromus">
-						<figure>
-							<img src="images/realisation_fromus.jpg" />
-							<figcaption>From-US</figcaption>
-						</figure>
-					</a>
-				</li>
-				<li>
-					<a href="realisations.php#a_slider">
-						<figure>
-							<img src="images/realisation_test2.jpg" />
-							<figcaption>Slider</figcaption>
-						</figure>
-					</a>
-				</li>
-				<li>
-					<figure>
-						<img src="images/realisation_test2.jpg" />
-						<figcaption>Pointage</figcaption>
-					</figure>
-				</li>
-				<li>
-					<figure>
-						<img src="images/realisation_test2.jpg" />
-						<figcaption>StarHead</figcaption>
-					</figure>
-				</li>
-			</ul>
-		</dd>
+			<dt>2015</dt>
+			<dd>
+				<p>
+					<strong>Première année de License professionnelle Développeur Informatique</strong><br />
+					À l'Université de Haute-Alsace, Mulhouse (68)
+				</p>
 
-		<dt>2014</dt>
-		<dd>
-			<p>
-				Création site elec
-			</p>
-
-			<ul class="gallery">
-				<li>
-					<a href="#">
+				<ul class="gallery">
+					<li>
+						<a href="realisations.php#a_fromus">
+							<figure>
+								<img src="images/realisation_fromus.jpg" />
+								<figcaption>From-US</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="realisations.php#a_slider">
+							<figure>
+								<img src="images/realisation_test2.jpg" />
+								<figcaption>Slider</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
 						<figure>
 							<img src="images/realisation_test2.jpg" />
-							<figcaption>Elec</figcaption>
+							<figcaption>Pointage</figcaption>
 						</figure>
-					</a>
-				</li>
-				<li>
-					<a href="#">
+					</li>
+					<li>
 						<figure>
 							<img src="images/realisation_test2.jpg" />
-							<figcaption>Hotel SIO</figcaption>
+							<figcaption>StarHead</figcaption>
 						</figure>
-					</a>
-				</li>
-			</ul>
-		</dd>
+					</li>
+				</ul>
+			</dd>
 
-		<dt>2013</dt>
-		<dd>
-			<p>
-				<strong>Baccalauréat professionnel Systèmes Électroniques Numériques</strong>, Mention assez bien<br />
-				<i>Spécialisation Télécoms et Réseaux</i><br />
-				Lycée Charles de Foucauld, Schiltigheim (67)
-			</p>
-		</dd>
-		<dd>
-			<p>
-				<strong>Technicien polyvalent</strong><br />
-				<i>Stage de @@@ semaines</i><br />
-				Aris Informatique, Strasbourg
-			</p>
+			<dt>2014</dt>
+			<dd>
+				<p>
+					Création site elec
+				</p>
 
-			<ul class="competences">
-				<li>Relation client</li>
-				<li>Réparation PC</li>
-			</ul>
-		</dd>
+				<ul class="gallery">
+					<li>
+						<a href="#">
+							<figure>
+								<img src="images/realisation_test2.jpg" />
+								<figcaption>Elec</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<figure>
+								<img src="images/realisation_test2.jpg" />
+								<figcaption>Hotel SIO</figcaption>
+							</figure>
+						</a>
+					</li>
+				</ul>
+			</dd>
 
-		<dt>2012</dt>
-		<dd>
-			<p>
-				<strong>Maintenance informatique</strong><br />
-				<i>Stage de @@@ semaines</i><br />
-				Aris Informatique, Strasbourg
-			</p>
-		</dd>
+			<dt>2013</dt>
+			<dd>
+				<p>
+					<strong>Baccalauréat professionnel Systèmes Électroniques Numériques</strong>, Mention assez bien<br />
+					<i>Spécialisation Télécoms et Réseaux</i><br />
+					Lycée Charles de Foucauld, Schiltigheim (67)
+				</p>
+			</dd>
+			<dd>
+				<p>
+					<strong>Technicien polyvalent</strong><br />
+					<i>Stage de @@@ semaines</i><br />
+					Aris Informatique, Strasbourg
+				</p>
 
-		<dt>2011</dt>
-		<dd>
-			<p>
-				<strong>Administration de réseau</strong><br />
-				<i>Stage de @@@ semaines</i><br />
-				SERTIT, Strasbourg
-			</p>
+				<ul class="competences">
+					<li>Relation client</li>
+					<li>Réparation PC</li>
+				</ul>
+			</dd>
 
-			<ul class="competences">
-				<li>Refonte d'un intranet</li>
-			</ul>
+			<dt>2012</dt>
+			<dd>
+				<p>
+					<strong>Maintenance informatique</strong><br />
+					<i>Stage de @@@ semaines</i><br />
+					Aris Informatique, Strasbourg
+				</p>
+			</dd>
 
-			<ul class="gallery">
-				<li>
-					<a href="#">
-						<figure>
-							<img src="images/realisation_test2.jpg" />
-							<figcaption>Intranet</figcaption>
-						</figure>
-					</a>
-				</li>
-			</ul>
-		</dd>
+			<dt>2011</dt>
+			<dd>
+				<p>
+					<strong>Administration de réseau</strong><br />
+					<i>Stage de @@@ semaines</i><br />
+					SERTIT, Strasbourg
+				</p>
 
-		<dt>2010</dt>
-		<dd>
-			<p>
-				<strong>Brevet des collèges</strong><br />
-				Collège Foch, Strasbourg
-			</p>
-		</dd>
-	</dl>
-</div>
+				<ul class="competences">
+					<li>Refonte d'un intranet</li>
+				</ul>
+
+				<ul class="gallery">
+					<li>
+						<a href="#">
+							<figure>
+								<img src="images/realisation_test2.jpg" />
+								<figcaption>Intranet</figcaption>
+							</figure>
+						</a>
+					</li>
+				</ul>
+			</dd>
+
+			<dt>2010</dt>
+			<dd>
+				<p>
+					<strong>Brevet des collèges</strong><br />
+					Collège Foch, Strasbourg
+				</p>
+			</dd>
+		</dl>
+	</div>
+{% endblock %}

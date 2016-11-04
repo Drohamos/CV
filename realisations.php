@@ -9,8 +9,6 @@ $twig = new Twig_Environment($loader, array(
 	'cache' => 'cache/Twig',
 ));
 
-$data['toInclude'] = 'realisations.twig';
-
 $data['tags'] = array(
 		'uha' => 'Projet UHA 4.0',
 		'php' => 'PHP',
@@ -74,13 +72,13 @@ $data['realisations'] = array(
 	array(
 		'nom' => 'Algorithme réservation chambres',
 		'nom_court' => 'hotel',
-		'tags' => array('uha', 'php', 'sql', 'html', 'css', 'jq'),
+		'tags' => array('php', 'sql', 'html', 'css', 'jq'),
 		'url' => 'http://demo.hotel.robinb.fr/reserver.php',
 		'desc' => '<p>Algorithme et interface d\'attribution de chambres dans un hôtel.</p>',
 		'images' => 1
 	),
 );
 
-echo $twig->render('layout.twig', $data);
+echo $twig->render('realisations.twig', $data);
 
 ?>

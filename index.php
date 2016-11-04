@@ -9,8 +9,6 @@ $twig = new Twig_Environment($loader, array(
     'cache' => 'cache/Twig',
 ));
 
-$data['toInclude'] = 'index.twig';
-
-echo $twig->render('layout.twig', $data);
+echo $twig->render('index.twig');
 
 ?>
