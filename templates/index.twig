@@ -1,5 +1,16 @@
 {% extends "layout.twig" %}
 
+{% macro showProjet(projet, newName) %}
+	<li>
+		<a href="realisations.php#a_{{ projet.nom_court }}">
+			<figure>
+				<img src="images/realisations_{{ projet.nom_court }}_1_thumb.jpg" />
+				<figcaption>{{ newName ? newName : projet.nom }}</figcaption>
+			</figure>
+		</a>
+	</li>
+{% endmacro %}
+
 {% block mainContent %}
 	<div id="slider">
 		<a href="#">
@@ -17,14 +28,7 @@
 				</p>
 
 				<ul class="gallery">
-					<li>
-						<a href="realisations.php#a_vitrines">
-							<figure>
-								<img src="images/realisation_fromus.jpg" />
-								<figcaption>Vitrines Mulhouse</figcaption>
-							</figure>
-						</a>
-					</li>
+					{{ _self.showProjet(realisations.vitrines, 'Vitrines Mulhouse') }}
 				</ul>
 			</dd>
 
@@ -36,34 +40,16 @@
 				</p>
 
 				<ul class="gallery">
-					<li>
-						<a href="realisations.php#a_fromus">
-							<figure>
-								<img src="images/realisation_fromus.jpg" />
-								<figcaption>From-US</figcaption>
-							</figure>
-						</a>
-					</li>
-					<li>
-						<a href="realisations.php#a_slider">
-							<figure>
-								<img src="images/realisation_test2.jpg" />
-								<figcaption>Slider</figcaption>
-							</figure>
-						</a>
-					</li>
-					<li>
-						<figure>
-							<img src="images/realisation_test2.jpg" />
-							<figcaption>Pointage</figcaption>
-						</figure>
-					</li>
+					{{ _self.showProjet(realisations.fromus) }}
+					{{ _self.showProjet(realisations.slider) }}
+					{{ _self.showProjet(realisations.pointage) }}
+					<!--
 					<li>
 						<figure>
 							<img src="images/realisation_test2.jpg" />
 							<figcaption>StarHead</figcaption>
 						</figure>
-					</li>
+					</li>!-->
 				</ul>
 			</dd>
 
@@ -74,22 +60,8 @@
 				</p>
 
 				<ul class="gallery">
-					<li>
-						<a href="#">
-							<figure>
-								<img src="images/realisation_test2.jpg" />
-								<figcaption>Elec</figcaption>
-							</figure>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<figure>
-								<img src="images/realisation_test2.jpg" />
-								<figcaption>Hotel SIO</figcaption>
-							</figure>
-						</a>
-					</li>
+					{{ _self.showProjet(realisations.elec) }}
+					{{ _self.showProjet(realisations.hotel, 'Algo. hotel') }}
 				</ul>
 			</dd>
 

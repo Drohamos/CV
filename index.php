@@ -1,5 +1,6 @@
 <?php
 
+require_once 'data.php';
 require_once 'lib/Twig/Autoloader.php';
 Twig_Autoloader::register();
 
@@ -9,6 +10,6 @@ $twig = new Twig_Environment($loader, array(
     'cache' => 'cache/Twig',
 ));
 
-echo $twig->render('index.twig');
+echo $twig->render('index.twig', $data);
 
 ?>
