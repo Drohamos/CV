@@ -17,7 +17,7 @@ $data['realisations'] = array(
         'nom_court' => 'vitrines',
         'tags' => array('uha', 'php', 'sql', 'html', 'css'),
         'url' => 'http://demo.vitrines.robinb.fr',
-        'desc' => '<p>Graphique interactif à partir d\'une base de données.</p>',
+        'desc' => '<p>Graphique interactif à partir d\'une liste des transactions de la carte de fidélité «Les Vitrines de Mulhouse».</p>',
         'images' => 1
     ),
     'fromus' => array(
@@ -66,6 +66,13 @@ $data['realisations'] = array(
         'tags' => array('php', 'sql', 'html', 'css', 'jq'),
         'url' => 'http://demo.hotel.robinb.fr/reserver.php',
         'desc' => '<p>Algorithme et interface d\'attribution de chambres dans un hôtel.</p>',
+        'images' => 1
+    ),
+    'sertit' => array(
+        'nom' => 'Intranet SERTIT',
+        'nom_court' => 'sertit',
+        'tags' => array('html', 'css', 'ps'),
+        'desc' => '<p>Conception d\'une maquette et reponte d\'un intranet</p>',
         'images' => 1
     ),
 );
