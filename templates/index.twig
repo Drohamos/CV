@@ -1,155 +1,125 @@
-<div id="slider">
-	<a href="#">
-		<img src="images/slider.jpg" />
-	</a>
-</div>
+{% extends "layout.twig" %}
 
-<div id="timeline">
-	<dl>
-		<dt>2016</dt>
-		<dd>
-			<p>
-				<strong>Deuxième année de License professionnelle Développeur Informatique</strong><br />
-				À l'Université de Haute-Alsace, Mulhouse (68)
-			</p>
+{% macro showProjet(projet, newName) %}
+	<li>
+		<a href="realisations.php#a_{{ projet.nom_court }}">
+			<figure>
+				<img src="images/realisations_{{ projet.nom_court }}_1_thumb.jpg" />
+				<figcaption>{{ newName ? newName : projet.nom }}</figcaption>
+			</figure>
+		</a>
+	</li>
+{% endmacro %}
 
-			<ul class="gallery">
-				<li>
-					<a href="realisations.php#a_vitrines">
-						<figure>
-							<img src="images/realisation_fromus.jpg" />
-							<figcaption>Vitrines Mulhouse</figcaption>
-						</figure>
-					</a>
-				</li>
-			</ul>
-		</dd>
+{% block mainContent %}
+	<div id="slider">
+		<a href="#">
+			<img src="images/slider.jpg" />
+		</a>
+	</div>
 
-		<dt>2015</dt>
-		<dd>
-			<p>
-				<strong>Première année de License professionnelle Développeur Informatique</strong><br />
-				À l'Université de Haute-Alsace, Mulhouse (68)
-			</p>
+	<div id="timeline">
+		<dl>
+			<dt>2016</dt>
+			<dd>
+				<p>
+					<strong>Deuxième année de License professionnelle Développeur Informatique</strong><br />
+					À l'Université de Haute-Alsace, Mulhouse (68)
+				</p>
 
-			<ul class="gallery">
-				<li>
-					<a href="realisations.php#a_fromus">
-						<figure>
-							<img src="images/realisation_fromus.jpg" />
-							<figcaption>From-US</figcaption>
-						</figure>
-					</a>
-				</li>
-				<li>
-					<a href="realisations.php#a_slider">
-						<figure>
-							<img src="images/realisation_test2.jpg" />
-							<figcaption>Slider</figcaption>
-						</figure>
-					</a>
-				</li>
-				<li>
-					<figure>
-						<img src="images/realisation_test2.jpg" />
-						<figcaption>Pointage</figcaption>
-					</figure>
-				</li>
-				<li>
-					<figure>
-						<img src="images/realisation_test2.jpg" />
-						<figcaption>StarHead</figcaption>
-					</figure>
-				</li>
-			</ul>
-		</dd>
+				<ul class="gallery">
+					{{ _self.showProjet(realisations.vitrines, 'Vitrines Mulhouse') }}
+				</ul>
+			</dd>
 
-		<dt>2014</dt>
-		<dd>
-			<p>
-				Création site elec
-			</p>
+			<dt>2015</dt>
+			<dd>
+				<p>
+					<strong>Première année de License professionnelle Développeur Informatique</strong><br />
+					À l'Université de Haute-Alsace, Mulhouse (68)
+				</p>
 
-			<ul class="gallery">
-				<li>
-					<a href="#">
+				<ul class="gallery">
+					{{ _self.showProjet(realisations.fromus) }}
+					{{ _self.showProjet(realisations.slider) }}
+					{{ _self.showProjet(realisations.pointage) }}
+					<!--
+					<li>
 						<figure>
 							<img src="images/realisation_test2.jpg" />
-							<figcaption>Elec</figcaption>
+							<figcaption>StarHead</figcaption>
 						</figure>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<figure>
-							<img src="images/realisation_test2.jpg" />
-							<figcaption>Hotel SIO</figcaption>
-						</figure>
-					</a>
-				</li>
-			</ul>
-		</dd>
+					</li>!-->
+				</ul>
+			</dd>
 
-		<dt>2013</dt>
-		<dd>
-			<p>
-				<strong>Baccalauréat professionnel Systèmes Électroniques Numériques</strong>, Mention assez bien<br />
-				<i>Spécialisation Télécoms et Réseaux</i><br />
-				Lycée Charles de Foucauld, Schiltigheim (67)
-			</p>
-		</dd>
-		<dd>
-			<p>
-				<strong>Technicien polyvalent</strong><br />
-				<i>Stage de @@@ semaines</i><br />
-				Aris Informatique, Strasbourg
-			</p>
+			<dt>2014</dt>
+			<dd>
+				<p>
+					Création d'un site internet pour un artisan éléctricien (freelance)
+				</p>
 
-			<ul class="competences">
-				<li>Relation client</li>
-				<li>Réparation PC</li>
-			</ul>
-		</dd>
+				<ul class="gallery">
+					{{ _self.showProjet(realisations.elec) }}
+					{{ _self.showProjet(realisations.hotel, 'Algo. hotel') }}
+				</ul>
+			</dd>
 
-		<dt>2012</dt>
-		<dd>
-			<p>
-				<strong>Maintenance informatique</strong><br />
-				<i>Stage de @@@ semaines</i><br />
-				Aris Informatique, Strasbourg
-			</p>
-		</dd>
+			<dt>2013</dt>
+			<dd>
+				<p>
+					<strong>Baccalauréat professionnel Systèmes Électroniques Numériques</strong>, Mention assez bien<br />
+					<i>Spécialisation Télécoms et Réseaux</i><br />
+					Lycée Charles de Foucauld, Schiltigheim (67)
+				</p>
+			</dd>
+			<dd>
+				<p>
+					<strong>Technicien polyvalent</strong><br />
+					<i>Stage de 8 semaines</i><br />
+					Aris Informatique, Strasbourg
+				</p>
 
-		<dt>2011</dt>
-		<dd>
-			<p>
-				<strong>Administration de réseau</strong><br />
-				<i>Stage de @@@ semaines</i><br />
-				SERTIT, Strasbourg
-			</p>
+				<ul class="competences">
+					<li>Vente et conseil clients</li>
+					<li>Maintenance informatique</li>
+				</ul>
+			</dd>
 
-			<ul class="competences">
-				<li>Refonte d'un intranet</li>
-			</ul>
+			<dt>2012</dt>
+			<dd>
+				<p>
+					<strong>Maintenance informatique</strong><br />
+					<i>Stage de 8 semaines</i><br />
+					Aris Informatique, Strasbourg
+				</p>
+			</dd>
 
-			<ul class="gallery">
-				<li>
-					<a href="#">
-						<figure>
-							<img src="images/realisation_test2.jpg" />
-							<figcaption>Intranet</figcaption>
-						</figure>
-					</a>
-				</li>
-			</ul>
-		</dd>
+			<dt>2011</dt>
+			<dd>
+				<p>
+					<strong>Administration de réseau</strong><br />
+					<i>Stage de 5 semaines</i><br />
+					SERTIT, Strasbourg
+				</p>
 
-		<dt>2010</dt>
-		<dd>
-			<p>
-				<strong>Brevet des collèges</strong><br />
-				Collège Foch, Strasbourg
-			</p>
-		</dd>
-	</dl>
-</div>
+				<ul class="competences">
+					<li>Refonte d'un intranet, dont utilisation de l'API Google Maps</li>
+					<li>Résolution et consignation des pannes matérielles</li>
+				</ul>
+
+				<ul class="gallery">
+					{{ _self.showProjet(realisations.sertit) }}
+				</ul>
+			</dd>
+
+			<dt>2010</dt>
+			<dd>
+				<p>
+					<strong>Brevet des collèges</strong><br />
+					Collège Foch, Strasbourg
+				</p>
+			</dd>
+		</dl>
+	</div>
+{% endblock %}
