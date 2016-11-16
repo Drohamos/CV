@@ -72,7 +72,7 @@ $data['realisations'] = array(
         'nom' => 'Intranet SERTIT',
         'nom_court' => 'sertit',
         'tags' => array('html', 'css', 'ps'),
-        'desc' => '<p>Conception d\'une maquette et reponte d\'un intranet</p>',
+        'desc' => '<p>Conception d\'une maquette et refonte d\'un intranet.</p>',
         'images' => 1
     ),
 );
